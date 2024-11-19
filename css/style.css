@@ -75,6 +75,27 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 19px;
+    padding: 30px 50px 30px 50px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    margin-left: 68px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--main-color);
+    border-top: solid 2px var(--main-color);
 }
 
 
