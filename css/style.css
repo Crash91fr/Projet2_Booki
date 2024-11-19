@@ -75,7 +75,6 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 header img {
@@ -228,7 +227,7 @@ header nav a:hover {
 
 .activites-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
 }
 
@@ -259,7 +258,7 @@ header nav a:hover {
 footer {
     background-color: #F2F2F2;
     display: flex;
-    padding-left: 20px;
+    justify-content: flex-end;
 }
 
 .footer-sections {
@@ -299,7 +298,7 @@ footer {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .populaires-cards a {
