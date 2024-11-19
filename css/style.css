@@ -67,7 +67,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
 /****** Header ***********/
@@ -139,11 +139,11 @@ header nav a:hover {
     flex-flow: row wrap;
 }
 
-.hebergements-cards .card-content{
+.hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 12px
+    padding-left: 12px;
 }
 
 .hebergements-cards img {
@@ -247,10 +247,11 @@ header nav a:hover {
 
 .activites-cards a {
     width: 23%;
+    display: flex;
 }
 
-.activites-cards .card-title{
-    padding: 0px 15px 20px 15px
+.activites-cards .card-title {
+    padding: 0px 15px 20px 15px;
 }
 
 /******* Footer ******/
@@ -259,6 +260,7 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     justify-content: flex-end;
+    margin-top: 50px;
 }
 
 .footer-sections {
