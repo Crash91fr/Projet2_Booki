@@ -70,6 +70,16 @@ a {
     color: var(--main-bg-color);
 }
 
+input::placeholder {
+    color: black; 
+    opacity: 1;  
+    font-weight: 700;
+}
+
+input:focus::placeholder {
+    opacity: 0.1;
+}
+
 /****** Header ***********/
 
 header {
@@ -79,7 +89,7 @@ header {
 
 header img {
     height: 19px;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 0px 30px 0px;
 }
 
 header nav {
@@ -102,10 +112,11 @@ header nav a:hover {
 .intro {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .intro h1 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .intro p {
@@ -115,7 +126,56 @@ header nav a:hover {
 /****** Search Bar ***********/
 
 .search-bar {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar i {
+    border: solid 1px var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: var(--main-bg-color);
+}
+
+.search-bar input {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+    border-right: none;
+    border-left: none;
+    font-size: 1.12em;
+    font-weight: 700;
+}
+
+.search-bar .search-button-mobile {
+    display: none;
+}
+
+.search-bar .search-button-desktop {
+    height: 50px;
+    color: white;
+    background-color: var(--main-color);
+    border: solid 1px var(--main-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.12em;
+    font-weight: 700;
+    padding: 0px 20px 0px 20px;
 }
 
 /****** Filtres ***********/
