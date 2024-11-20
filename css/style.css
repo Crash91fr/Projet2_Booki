@@ -55,7 +55,7 @@ a {
 }
 
 .card-subtitle {
-    font-size: 0.88em; /*14px*/
+    font-size: 0.875em; /*14px*/
 }
 
 .footer-title {
@@ -97,6 +97,77 @@ header nav a:hover {
     border-top: solid 2px var(--main-color);
 }
 
+/****** Intro ***********/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-top: 0px;
+}
+
+/****** Search Bar ***********/
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+/****** Filtres ***********/
+
+.filters {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filters-button {
+    display: flex;
+    gap: 10px;
+}
+
+.filters-button button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 25px;
+    height: 50px;
+    border: solid 2px #d9d9d9;
+    padding: 4px 19px 4px 19px;
+    font-weight: 700;
+    font-size: 1.06em;
+}
+
+.filters-button button:hover {
+    background-color:#DEEBFF;
+}
+
+/****** Info ***********/
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-button {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #d9d9d9;
+    border-radius: 50%;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -258,7 +329,7 @@ header nav a:hover {
 /******* Footer ******/
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
