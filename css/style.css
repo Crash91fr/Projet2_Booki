@@ -30,7 +30,7 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*pour contenir le child container dans le parent container*/
 }
 
 a {
@@ -56,7 +56,7 @@ a {
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover; /*maintien le ration d'affichage pour remplir l'espace*/
 }
 
 .card-title {
@@ -244,6 +244,8 @@ header nav a:hover {
 }
 
 .hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
     padding: 30px 30px 15px 30px;
     box-sizing: border-box;
 }
@@ -251,15 +253,12 @@ header nav a:hover {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    background-color: var(--main-bg-color);
-    border-radius: 15px;
 }
 
 .hebergements-cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+    justify-content: space-between;;
 }
 
 .hebergements-cards a {
@@ -273,8 +272,6 @@ header nav a:hover {
 }
 
 .hebergements-cards .card-content {
-    display: flex;
-    flex-direction: column;
     padding-left: 12px;
 }
 
@@ -308,8 +305,6 @@ header nav a:hover {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    background-color: var(--main-bg-color);
-    border-radius: 15px;
 }
 
 .populaires-title {
@@ -410,7 +405,7 @@ footer {
     row-gap: 15px;
 }
 
-.footer-sections .footer-title {
+.footer-title {
     margin-bottom: 15px;
 }
 
@@ -463,7 +458,7 @@ footer {
     /* ... */
 
     body {
-        margin: 0;
+        margin: 0; /* pour supprimer les margins par défaut */
     }
 
     .main-container {
@@ -525,11 +520,11 @@ footer {
         margin-bottom: 20px;
     }
 
-    .hebergements {
+    .hebergements-and-populaires .hebergements {
         background-color: white;
     }
 
-    .populaires {
+    .hebergements-and-populaires .populaires {
         border-radius: 0;
         margin-bottom: 30px;
     }
