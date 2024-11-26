@@ -56,7 +56,7 @@ a {
 }
 
 .card img {
-    object-fit: cover; /*maintien le ration d'affichage pour remplir l'espace*/
+    object-fit: cover; /*maintien le ratio d'affichage pour remplir l'espace*/
 }
 
 .card-title {
@@ -94,7 +94,7 @@ header {
 
 header img {
     height: 19px;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px;
 }
 
 header nav {
@@ -183,7 +183,7 @@ header nav a:hover {
     border-bottom-right-radius: 15px;
     font-size: 1.12em;
     font-weight: 700;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px;
 }
 
 /****** Filtres ***********/
@@ -209,7 +209,7 @@ header nav a:hover {
     border-radius: 25px;
     height: 50px;
     border: solid 2px #d9d9d9;
-    padding: 4px 19px 4px 19px;
+    padding: 4px 19px;
     font-weight: 700;
     font-size: 1.06em;
 }
@@ -508,6 +508,7 @@ footer {
     .filters-button {
         flex-flow: row wrap;
         row-gap: 20px;
+        max-width: 400px;
     }
 
     .filters-button button {
@@ -570,6 +571,19 @@ footer {
 
     .footer-sections {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 378px) {
+
+    .search-bar input {
+        width: 185px;
+    }
+
+    .filters-button button {
+        font-size: 0.875em;
+        padding: 4px 10px;
     }
 
 }
