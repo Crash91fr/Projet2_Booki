@@ -505,6 +505,11 @@ footer {
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     }
 
+    .search-bar input {
+        width: 70%;
+        box-sizing: border-box;
+    }
+
     .filters-button {
         flex-flow: row wrap;
         row-gap: 20px;
@@ -513,7 +518,10 @@ footer {
 
     .filters-button button {
         width: 48%;
-        font-size: 1em;
+        font-size: calc(0.5vw + 0.78em);
+        box-sizing: border-box;
+        white-space: nowrap;
+        padding-left: 15px;
     }
 
     .hebergements-and-populaires {
@@ -575,15 +583,3 @@ footer {
 
 }
 
-@media (max-width: 378px) {
-
-    .search-bar input {
-        width: 185px;
-    }
-
-    .filters-button button {
-        font-size: 0.875em;
-        padding: 4px 10px;
-    }
-
-}
